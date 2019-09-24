@@ -27,6 +27,9 @@ request({url:geocodeUrl, json:true}, (error, response) => {
 
     if(error){
         console.log(errorChalk('Unable to connect with Geocode api'));
+    }else if(response.body.features.length === 0){
+        console.log(errorChalk('Unable to find location. Try another search.'));
+
     }else{
         const latitude=response.body.features[0].center[1];
         const logitude=response.body.features[0].center[0 ];
