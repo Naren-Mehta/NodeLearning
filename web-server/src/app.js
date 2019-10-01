@@ -7,12 +7,17 @@ app.get('',(req,res)=>{
     res.send('Hello Express!');
 });
 
-app.get('/about',(req,res)=>{
-    res.send('Hello About Express!');
+app.get('/help',(req,res)=>{
+    res.send('Help Page!');
 });
 
-app.get('/home',(req,res)=>{
-    res.send('Hello Home Express!');
+app.get('/about',(req,res)=>{
+    res.send('About page!');
+});  
+
+
+app.get('/showWeather',(req,res)=>{
+    res.send('My Weather app page');
 });
 
 app.listen(3000,()=>{
