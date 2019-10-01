@@ -2,9 +2,10 @@
 const request = require('request');
 
 const forecast = (lat, long, callback) => {
-    const weatherUrl = 'https://api.darksky.net/forecast/0a303a4b92790b15e6eba6fa5fe62836/'
-        + encodeURIComponent(lat)
-        + ',' + encodeURIComponent(long)+'';
+    // const weatherUrl = 'https://api.darksky.net/forecast/0a303a4b92790b15e6eba6fa5fe62836/'+ lat
+    //     + ',' + long+'';
+
+    weatherUrl='https://api.darksky.net/forecast/0a303a4b92790b15e6eba6fa5fe62836/37.8267,-122.4233';
 
     console.log(weatherUrl);
 
