@@ -17,7 +17,10 @@ app.get('/about',(req,res)=>{
 
 
 app.get('/showWeather',(req,res)=>{
-    res.send('My Weather app page');
+    res.send({
+        forecast:'It is snowing',
+        location :'Pithoragarh'
+    });
 });
 
 app.listen(3000,()=>{
